@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/favicon.jpeg"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+        <!-- HAMBURGER MENU BUTTON (responsively visible) -->
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- THE REAL NAVIGATION -->
+        <nav class="navigation">
+            <h1>
+                 HAPPY BIRTHDAY MRINAALINI💖💖
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">home</a></li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="about(); animate3.play(); animate4.play();"
+                        >Click It</a
+                    >
+                </li>
+                <li><a href="#" onclick="services(); animate6.play();">Gift Is Here </a></li>
+                <li><a href="#" onclick="portfolio()">Your Pics</a></li>
+                <li><a href="#" onclick="blog()">Wishes</a></li>
+                <li>
+                    
+                </li>
+            </ul>
+            <p>&copy; Project Mrinaalini.</p>
+        </nav>
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="canvas_container">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content-for-home">
+                        <div class="img-container"></div>
+                        <h1 align="center">Happy Birthday Mrinaalini </h1>
+                        
+
+                        <div class="side-nav">
+                            <button
+                                onclick=" animate3.play(); animate4.play();"
+                            >
+                                <span class="w">H</span>
+                                <span class="tooltip">  HHHHHHHHHH </span>
+                            </button>
+                            <button
+                                onclick=" animate3.play(); animate4.play();"
+                            >
+                                <span class="w">A</span>
+                                <span class="tooltip"> AAAAAAAAAA  </span>
+                            </button>
+                            <button
+                                onclick=" animate3.play(); animate4.play();"
+                            >
+                                <span class="w">P</span>
+                                <span class="tooltip">  PPPPPPPPPP </span>
+                            </button>
+                            <button
+                                onclick=" animate3.play(); animate4.play();"
+                            >
+                                <span class="w">P</span>
+                                <span class="tooltip"> PPPPPPPPPP </span>
+                            </button>
+                            <button
+                                onclick=" animate3.play(); animate4.play();"
+                            >
+                                <span class="w">Y</span>
+                                <span class="tooltip"> YYYYYYYYYY  </span>
+                            </button>
+                            <button
+                                onclick=" animate3.play(); animate4.play();"
+                            >
+                                <span class="w">B</span>
+                                <span class="tooltip">Belive Your Self  </span>
+                            </button>
+                            <button onclick=" animate6.play();">
+                                <span class="w">I</I></span>
+                                <span class="tooltip"> Invite New Challanges </span>
+                            </button>
+                            <button onclick="">
+                                <span class="w">R</span>
+                                <span class="tooltip">
+                                    Remember Past Achievements
+                                </span>
+                            </button>
+                            <button onclick=>
+                                <span class="w">T</span>
+                                <span class="tooltip"> Trust Your Judgement </span>
+                            </button>
+                            <button onclick=" animate5.play()">
+                                <span class="w">H</span>
+                                <span class="tooltip"> Have Faith In Your Abilities </span>
+                            </button>
+                            <button onclick=" animate5.play()">
+                                <span class="w">D</span>
+                                <span class="tooltip"> Desire In Your Best </span>
+                            </button>
+                            <button onclick=" animate5.play()">
+                                <span class="w">A</span>
+                                <span class="tooltip"> Affrim Your Strength </span>
+                            </button>
+                            <button onclick=" animate5.play()">
+                                <span class="w">Y</span>
+                                <span class="tooltip"> You’re Got What It Takes </span>
+                            </button>
+                        </div>
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+                    <!-- SEGMENT FOR STYLING. -->
+                    <div class="styling">
+                        <div class="absolute box"></div>
+                        <div class="absolute circle"></div>
+                        <div class="absolute triangle"></div>
+                        <div class="absolute dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                            <div class="dot dot4"></div>
+                            <div class="dot dot5"></div>
+                            <div class="dot dot6"></div>
+                            <div class="dot dot7"></div>
+                            <div class="dot dot8"></div>
+                            <div class="dot dot9"></div>
+                            <div class="dot dot10"></div>
+                            <div class="dot dot11"></div>
+                            <div class="dot dot12"></div>
+                            <div class="dot dot13"></div>
+                            <div class="dot dot14"></div>
+                            <div class="dot dot15"></div>
+                            <div class="dot dot16"></div>
+                            <div class="dot dot17"></div>
+                            <div class="dot dot18"></div>
+                            <div class="dot dot19"></div>
+                            <div class="dot dot20"></div>
+                            <div class="dot dot21"></div>
+                            <div class="dot dot22"></div>
+                            <div class="dot dot23"></div>
+                            <div class="dot dot24"></div>
+                        </div>
+
+                        <svg
+                            class="wave absolute"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,320L48,277.3C96,235,192,149,288,122.7C384,96,480,128,576,165.3C672,203,768,245,864,234.7C960,224,1056,160,1152,112C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+
+                        <svg
+                            class="wave absolute opposite"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,218.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <!-- REAL CONTENT -->
+                    <div class="wrapper">
+                        <div class="face face1">
+                            <div class="content">
+                                <p>Hello,</p>
+                                <h1>Hey! Mrinaalini</h1>
+                                <p class="text">
+                                    When a friend is special
+                                    their birthday is too
+                                     That’s why these special wishes
+                                    are on their way to you.
+                                    And if your birthday brings you
+                                    surprises, great and small –
+                                    That’s just the way it should be
+                                    for the dearest friend of all.
+
+                                    Happy birthday, dearest friend.
+                                </p>
+                                <a
+                                    class="button download"
+                                    href="resources/img/bg1.jpg"
+                                    download="Mrinaalini_cv"
+                                    >Happy </a
+                                >
+                                <a
+                                    class="button hire"
+                                    href="#"
+                                    class="hire"
+                                    onclick=" animate5.play()"
+                                    >Birthday</a
+                                >
+                            </div>
+                        </div>
+                        <div class="face face2"></div>
+                    </div>
+
+                    <!-- THE NAVIGATION OF ABOUT -->
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one"
+                                    >Character</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-text="two">About You </a>
+                            </li>
+                            <li>
+                                <a href="#" data-text="three">Some xWishes Again</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- SKILL BOX -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">Friendship</div>
+                                <div class="value" style="left: 100%">100%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 100%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">INNONCENCE</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">STUDIES</div>
+                                <div class="value" style="left: 65%">65%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 65%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">ATTITUDE</div>
+                                <div class="value" style="left: 0%">0%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 0%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">CUTENESS</div>
+                                <div class="value" style="left: 100%">100%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 100%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">ANGRY</div>
+                                <div class="value" style="left: 55%">55%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 55%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">BIRTHDAY BUMBS</i>
+                                <h2>Happy Birthday Topper</h2>
+                                <i class="name_company"></i>
+                                <article class="text_hidden">
+                                    I can’t change the past
+
+                                    Nor do I want to
+                                    
+                                    Every day is a new start
+                                    
+                                    When spent with you
+                                    
+                                    A beautiful journey
+                                    
+                                    A road with no end
+                                    
+                                    Is what life is, when
+                                    
+                                    Lived with a real friend
+                                    
+                                    Happy Birthday
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">March 23 2023</i>
+                                <h2> </h2>
+                                <i class="name_company"> </i>
+                                <article class="text_hidden">
+                                    I’ve spoken many lies
+
+                                    I’ve broken many promises
+                                    
+                                    I’ve picked up many fights
+                                    
+                                    I’ve given you bad memories
+                                    
+                                    Yet, through this chaos
+                                    
+                                    By my side, you’ve stood strong
+                                    
+                                    Backing me all the time
+                                    
+                                    Even when you know I was wrong
+                                    
+                                    What did I do to deserve
+                                    
+                                    Such a loyal friend, I have no clue
+                                    
+                                    But one thing’s for sure, my life
+                                    
+                                    Is nothing without you
+                                    
+                                    Happy birthday
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">March 23 2023</i>
+                                <h2>  </h2>
+                                <i class="name_company"> </i>
+                                <article class="text_hidden">
+                                    What I am today is not
+
+                                    My doing alone
+                                    
+                                    There is another reason
+                                    
+                                    For the way in which I’ve grown
+                                    
+                                    How my life has shaped up
+                                    
+                                    Owes itself to many things
+                                    
+                                    One of them being you
+                                    
+                                    A best friend, who’s given me wings
+                                    
+                                    My life, is incomplete
+                                    
+                                    Without your contribution
+                                    
+                                    That’s my toast to you
+                                    
+                                    On your birthday celebration
+                                    
+                                    Happy birthday
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">March 23 2023</i>
+                                <h2> </h2>
+                                <i class="name_company"> </i>
+                                <article class="text_hidden">
+                                    Twitter, is where the celebs hang out
+
+                                    Facebook, is the most popular social network
+
+                                    Reddit, is the face of the internet
+
+                                    But you, make my life tick like clockwork
+
+                                    Instagram, is where the selfies are slaying it
+
+                                    Google, is where life’s answers are found
+
+                                    YouTube, is where stars of tomorrow are born
+
+                                    But you, are what makes my world go round
+
+                                    Happy birthday
+                                </article>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">March 23 2023 </i>
+                                <h2> </h2>
+                                <i class="name_company"> </i>
+                                <article class="text_hidden">
+                                    Wishes made on birthdays
+
+                                    Always come true
+                                    
+                                    That is why I wish
+                                    
+                                    The very best for you
+                                    
+                                    I hope that you achieve
+                                    
+                                    Everything you seek
+                                    
+                                    There should never be a moment
+                                    
+                                    In your life, sad or bleak
+                                    
+                                    I wish that you soar to new heights
+                                    
+                                    And wade into uncharted territory
+                                    
+                                    For you know well, that you can
+                                    
+                                    Always fall back on me
+                                    
+                                    Happy birthday                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">MArch 23 2023</i>
+                                <h2> </h2>
+                                <i class="name_company"> </i>
+                                <article class="text_hidden">
+                                    Our friendship, has no shape
+
+                                    It can’t be measured with a tape
+                                    
+                                    Our friendship, flows like water
+                                    
+                                    It adapts according to, situation and matter
+                                    
+                                    Our friendship, tastes like cake
+                                    
+                                    It is sweet, cute and never fake
+                                    
+                                    Our friendship, feels genuine and true
+                                    
+                                    Here’s wishing, a happy birthday to you
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-open"></i>
+                                <i class="date">March 23 2023</i>
+                                <h2>  </h2>
+                                <i class="name_company"> </i>
+                                <article class="text_hidden">
+                                    Been through a lot in life
+
+                                    We have, together
+                                    
+                                    Not a single regret I have
+                                    
+                                    Not now, not never
+                                    
+                                    Best Friends, meant to be
+                                    
+                                    Is what we really are
+                                    
+                                    Through good times and bad
+                                    
+                                    You’re my life’s brightest star
+                                    
+                                    Happy birthday                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-open"></i>
+                                <i class="date">March 23 2023</i>
+                                <h2> </h2>
+                                <i class="name_company"></i>
+                                <article class="text_hidden">
+                                    Best friends help each other shine
+
+                                    And listen to each other whine
+                                    
+                                    Best friends help each other heal
+                                    
+                                    And share all that they feel
+                                    
+                                    Best friends have each other’s back
+                                    
+                                    To keep each other’s lives on track
+                                    
+                                    Best friends, are a pair in a million
+                                    
+                                    In my life, you are the chosen on
+                                    
+                                    Happy birthday                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+                <div class="services main">
+                    <!-- <section class="background">
+                        <div class="bg_wrapper"></div>
+                    </section> -->
+                    <div class="hero">
+                        <span class="typography">
+                            <span class="t_dummy">Many More Happy Returns Of The Day</span> <br />
+                            <span class="t-box">
+                                <span class="box-side box-front"
+                                    >Be Happy</span
+                                >
+                                <span class="box-side box-top"
+                                    >Always Smile </span
+                                >
+                                <span class="box-side box-back"
+                                    >Mrinaalini</span
+                                >
+                                <span class="box-side box-bottom"
+                                    >happy Birthday</span
+                                >
+                            </span>
+                        </span>
+                        <p class="hero-text">
+                            On your birthday,
+                            I wanted you to know
+                            that I am so fortunate
+                            not only to have such
+                            a strong female figure
+                            in my life, but also
+                            the most reliable,
+                            trustworthy friend
+                            I could wish for.
+                            
+                            You are an inspiration
+                            to many, including me!
+                            Have the absolute best
+                            day, you lovely lady!
+                        </p>
+                    </div>
+                    <div class="capabilities left move-little-down">
+                        <img src="resources/img/elements/web_bg.png" alt="" />
+                        <p class="c_content">
+                            <span class="c_title">Wishes For You</span>
+                            A birthday should always be a joyous occasion,
+                            Family and friends; obvious invasion.
+                            Duplicate gifts, you don’t even like,
+                            If you complain, might get a strike.
+
+                            One simple day, placed on display,
+                            Carefully observed for signs of decay.
+                            Dishonest smiles, they don’t mingle in truth,
+                            As if you were the only, losing your youth.
+
+                            At such a wise age, everything seems so clear,
+                            Excuse to celebrate, they all came for beer.
+                            Deep down inside, you know that they care,
+                            Your Zoo is unique; normal is rare.
+                            <br />
+                            <a href="#">      </a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="capabilities right">
+                        <p class="c_content">
+                            <span class="c_title">Happy Birthday</span>
+                            My Friend,
+
+                            On your special day
+                            I quote Harold B. Lee
+                            And say
+                            
+                            “May you have
+                            Enough happiness to keep you sweet,
+                            Enough trials to keep you strong,
+                            Enough sorrow to keep you human,
+                            Enough hope to keep you happy,
+                            Enough failure to keep you humble,
+                            Enough success to keep you eager,
+                            Enough wealth to meet your needs,
+                            Enough enthusiasm to look forward,
+                            Enough friends to give you comfort,
+                            Enough faith to banish depression,
+                            Enough determination to make each day better than yesterday.”.
+                            Happy Birthday!!
+                            <br />
+                            <a href="#">                  </a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                        <img
+                            src="resources/img/elements/graphics_bg.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="capabilities left">
+                        <img
+                            src="resources/img/elements/seo_bg.png"
+                            alt=""
+                            style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            "
+                        />
+                        <p class="c_content">
+                            <span class="c_title">Mrinaalini</span>
+                            Another year has passed.
+                            A birthday for you is in store
+                            May you find this coming year
+                            Be one with lots of open doors.
+                            
+                            Follow your dreams
+                            Remember you can achieve
+                            All that you dream
+                            Whatever your mind can conceive
+                            
+                            So this poem brings
+                            wishes for you
+                            in hopes that the coming year
+                            is filled with things you love to do.
+                            <br />
+                            <a href="#">   </a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="foot">
+                        <h2>HAPPY BIRTHDAY MRINAALINI</h2>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Mrinaalini</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources/img/portfolios/app/2.jpeg"
+                                alt="portfolio"
+                            />
+                        </div>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Innoncent Ponnnu</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources/img/portfolios/card/2.jpeg"
+                                alt="portfolio"
+                            />
+                        </div>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Childish Character</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources/img/portfolios/web/1.jpg"
+                                alt="portfolio"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer4">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        <h1>Topper</h1>
+                                        <span
+                                            >Category:
+                                            <span style="color: #999"
+                                               >Assisstant Reporter</span
+                                            ></span
+                                        >
+                                    </div>
+                                    <div class="other_text">
+                                        <h2> </h2>
+                                        <p
+                                            class="pro_brief"
+                                            style="
+                                                color: #999;
+                                                padding-left: 15px;
+                                            "
+                                        >
+                                        My wish for you on this special day
+                                        Is that the coming year goes well
+                                        And may life treat you great in all the ways
+                                        That my wishes and words can’t tell.
+                                        
+                                        Behind you now is yesterday.
+                                        Let your experience and knowledge pave the way
+                                        Here’s to you and to your success
+                                        We know you will give it your best.
+                                        
+                                        So happy, happy birthday
+                                        We wish you many more
+                                        and on this day to you, we say
+                                        We know life has good things in store.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    <h2> </h2>
+                                    <p class="Date">
+                                        <b>  </b>
+                                        <span style="color: #999">2020</span>
+                                    </p>
+                                    <p class="client">
+                                        <b>Client: </b>
+                                        <span style="color: #999">xyz</span>
+                                    </p>
+                                    <p>
+                                        <b> </b>
+                                        <span style="color: #999"
+                                            >HTML, CSS, JavaScript</span
+                                        >
+                                    </p>
+                                    <p class="link">
+                                        <b> </b>
+                                        <span style="color: #999"
+                                            ><a href="#"
+                                                >www.happybirthdaymrinaa.com</a
+                                            ></span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="closeButton">
+                                <span> </span>
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            <li>
+                                <a
+                                    class="filter active"
+                                    href="#"
+                                    data-filter="all"
+                                    >All</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".web"
+                                    >Innonecnt Face </a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".logo"
+                                    >Childish Characteer</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".card"
+                                    >Talented Girl </a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".app"
+                                    >Topper</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".icon"
+                                    >     </a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/1.jpg"
+                                alt=""
+                            />
+                            <span class="title">Cute Pics</span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="           resources/img/portfolios/icon/5.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/1.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/2.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/1.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/2.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/3.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/3.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/4.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/4.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/1.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/4.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/2.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/2.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/3.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/5.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/4.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/2.jpeg"
+                                alt=""
+                            />
+                            <span class="title">  </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/5.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/1.jpeg"
+                                alt=""
+                            />
+                            <span class="title">   </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/6.jpeg"
+                                alt=""
+                            />
+                            <span class="title">  </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/7.jpeg"
+                                alt=""
+                            />
+                            <span class="title">  </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/3.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/3.jpeg"
+                                alt=""
+                            />
+                            <span class="title"> </span>
+                            <span class="port_link">         </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>Some Birthday Wishes From Me For You</span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.jpeg" alt="" />
+                                <h4>MRINAALINI 💖</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    This heartfelt wish is just for you
+                                    Today is your special day
+                                    May all the dreams you do pursue
+                                    Be realized in every way.
+                                    
+                                    A special person you are to me
+                                    You deserve the best of everything
+                                    So may this birthday and the coming year be
+                                    One that offers you the best that life may bring.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.jpeg" alt="" />
+                                <h4>MRINAALINI 💖</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Been through a lot in life
+                                    We have, together
+                                    Not a single regret I have
+                                    Not now, not never
+                                    Best Friends, meant to be
+                                    Is what we really are
+                                    Through good times and ba
+                                    You’re my life’s brightest star
+                                    Happy birthday
+                                    
+                                    
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.jpeg" alt="" />
+                                <h4>MRINAALINI 💖</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Happy birthday!
+                                    You may look a little older,
+                                    Sadly youth doesn’t come cheap,
+                                    So skip all those Botox parties,
+                                    And just get your beauty sleep.
+                                    
+                                    Be glad you’re young at heart,
+                                    And still, look as good as gold,
+                                    Too bad you’re not a millionaire,
+                                    And can’t put your looks on hold.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.jpeg" alt="" />
+                                <h4>MRINAALINI 💖</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Mrinaalini is an excellent web designer and
+                                    faultless technician. He’s a pleasure to
+                                    work with, great value for money and will
+                                    always go the extra mile when necessary.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.jpeg" alt="" />
+                                <h4>MRINAALINI 💖</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    I wish you something, just can’t remember,
+                                    Don’t be upset; you’re my family member.
+                                    It was clearly, on my mind,
+                                    With so many thoughts, it’s hard to find.
+                                    
+                                    Maybe it’s simply not that essential,
+                                    Please lose that frown; you have so much potential.
+                                    On second thought, it might be coming back to me,
+                                    Now I know why those brain pills were free.
+                                    
+                                    Visions appear of colorful balloons,
+                                    In the background, I hear those fine tunes.
+                                    Near the end of the dream, I can taste a delicious cake,
+                                    It must be your birthday, as I awake.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.jpeg" alt="" />
+                                <h4>MRINAALINI 💖</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Happy birthday to the cartoon I know,
+                                    You have so many stupid gestures to show,
+                                    Ok, don’t get bugged; I was kidding, my dear,
+                                    Coz it’s your birthday, so spread the cheer,
+                                    Have the most amazing day of your life,
+                                    May God give me strength to survive,
+                                    With you…Lol!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+91 7604913189">+91 7604913189</a>
+                            <a href="tel:+91 7604913189">+91 7604913189</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Address</span>
+                            <a
+                                href="https://goo.gl/maps/X8f4v9oo5R7pNv9b7"
+                            >
+                                <h3>BMHSS</h3>
+                                <span>TAMIL NADU</span><br />
+                                <span>INDIA </span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:email1.gmail.com"
+                                >happybirthdaymrinaa@gmail.com</a
+                            >
+                            <a href="mailto:email2.gmail.com"
+                                >happybirthdaymrinaa@gmail.com</a
+                            >
+                        </div>
+                    </address>
+
+                    <form action="#" method="post">
+                        <h1>Get In Touch</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Full Name"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button class="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
+        <script src="resources/swiper js/swiper-bundle.min.js"></script>
+        <!-----------------MAPBOX GL {https://www.mapbox.com/} [USED IN contact.js]----------------->
+        <script src="resources/mapbox-gl/mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+        <!-----------------VANILLA TILT JS {https://micku7zu.github.io/vanilla-tilt.js/}----------------->
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+            
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, {start: 1000}),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>
